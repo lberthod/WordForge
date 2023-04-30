@@ -21,25 +21,25 @@ st.set_page_config(
 )
 
 st.title('🔗💬 WORD FORGE')
-st.write('wordForge is a AI applications tools to help your to create your contents for your product page in your ecommerce.')
+st.write('WordForge is a AI application tool to help your to create your content for your product pages in your ecommerce.')
 st.info('WordForge is requesting the information below in order to generate the most accurate content possible for you. All of the information is optional and helps improve the accuracy of the generated output.')
-st.title('Content s')
-st.info('In this  input, you will give some information about the structure and the tone of communication for the text')
+st.title('Content   ')
+st.info('In this  input, you will give some information about the structure and the tone of communication for the text.')
 
 language = st.radio(
     "Which language do you want to use",
     ('English', 'French', 'German','Italian' ))
 
 size = st.slider('On a scale of 1 to 4, what size description do you want?', 1, 4, 2)
-prompt_tone = st.text_area('Explain your tone of the communication') 
+prompt_tone = st.text_area('Explain your tone of communication') 
 
 tone_list = st.multiselect(
-    'Add some tone you will use?',
+    'Add some adjectives for the tone you will use',
     ['Affirmative', 'Negative', 'Interrogative', 'Exclamatory','Sarcastic', 'Formal', 'Relax' , 'Authoritative','Rational', 'Emotional'],
     ['Affirmative'])
 
 st.title('Explain your product')
-st.info('In this  input, you can give information abour your product and your company to help wordForge to generate a precise text for you')
+st.info('In this input, you can give information abour your product and your company to help WordForge to generate a precise text for you.')
 
 prompt_title = st.text_input('Title of product') 
 prompt_explanation_product = st.text_area('Explain your product') 
@@ -48,11 +48,11 @@ prompt_characteristic = st.text_area('Characteristic of the product')
 prompt_supplyer = st.text_area('Who is the supplyer') 
 
 persona_list = st.multiselect(
-    'Add some adjectivs for your persona?',
+    'Add some adjectives for your buyer persona',
     ['Young', 'Active', 'Interrogative', 'Outgoing','Environmentalist', 'Loyal', 'Relax' , 'Innovative','High-income', 'Urban'],
     ['Active'])
 
-prompt_seo= st.text_area('What is SEO keyword') 
+prompt_seo= st.text_area('Add some SEO keywords') 
 
 # Prompt templates
 title_template = PromptTemplate(
