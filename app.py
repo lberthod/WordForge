@@ -14,7 +14,12 @@ from langchain.tools.file_management.read import ReadFileTool
 os.environ['OPENAI_API_KEY'] = st.secrets["auth"]
 
 # App framework
-
+st.set_page_config(
+   page_title="wordForge",
+   page_icon="🧊",
+   layout="wide",
+   initial_sidebar_state="expanded",
+)
 
 st.title('🔗 WORD FORGE')
 st.write(', *World!* :sunglasses: WordForge help your to create your contents about your product in your e-commerce.')
