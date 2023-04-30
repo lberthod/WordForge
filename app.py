@@ -14,7 +14,7 @@ from langchain.tools.file_management.read import ReadFileTool
 os.environ['OPENAI_API_KEY'] = st.secrets["auth"]
 
 # App framework
-st.beta_set_page_config(page_title='wordForge',layout = 'wide', initial_sidebar_state = 'auto')
+st.beta_set_page_config(page_title='wordForge')
 
 
 st.title('🔗 WORD FORGE')
