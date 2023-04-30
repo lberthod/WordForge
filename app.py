@@ -16,7 +16,7 @@ os.environ['OPENAI_API_KEY'] = st.secrets["auth"]
 # App framework
 
 
-st.title('🦜🔗 Text product generator')
+st.title('🦜🔗 WORD FORGE')
 st.write('Hello, *World!* :sunglasses: Welcome in this website to help your to create your contents about product in your ecommerce.')
 
 st.title('Content s')
