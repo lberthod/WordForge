@@ -12,7 +12,7 @@ from langchain.agents import Tool
 from langchain.tools.file_management.write import WriteFileTool
 from langchain.tools.file_management.read import ReadFileTool
     
-os.environ['OPENAI_API_KEY'] = apikey
+os.environ['OPENAI_API_KEY'] = st.secrets["my_cool_secrets"]["api_openai"]
 
 # App framework
 
