@@ -14,13 +14,14 @@ from langchain.tools.file_management.read import ReadFileTool
 os.environ['OPENAI_API_KEY'] = st.secrets["auth"]
 
 # App framework
+st.beta_set_page_config(page_title='wordForge',layout = 'wide', initial_sidebar_state = 'auto')
 
 
 st.title('🔗 WORD FORGE')
 st.write(', *World!* :sunglasses: WordForge help your to create your contents about your product in your e-commerce.')
-st.info('WordForge is requesting the information below in order to generate the most accurate content possible for you. All of the information is optional and helps improve the accuracy of the generated output.
+st.info('WordForge is requesting the information below in order to generate the most accurate content possible for you. All of the information is optional and helps improve the accuracy of the generated output.')
 
-')
+
 
 st.title('Content s')
 
