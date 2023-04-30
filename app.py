@@ -17,8 +17,7 @@ os.environ['OPENAI_API_KEY'] = st.secrets["auth"]
 st.set_page_config(
    page_title="wordForge",
    page_icon="🧊",
-   layout="wide",
-   initial_sidebar_state="expanded",
+   
 )
 
 st.title('🔗 WORD FORGE')
