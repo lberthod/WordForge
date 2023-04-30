@@ -95,7 +95,7 @@ resume_two_100_template = PromptTemplate(
 
 resume_three_100_template = PromptTemplate(
     input_variables = ['rep4', 'rep5', 'summary', 'prompt_seo', 'prompt_tone', 'tone_list'], 
-    template=' Your are  a professional copywriterr quality . Write another innovant and quality  paragraph after this text : {rep4}  {rep5}. Write another kind of sentence than his a previous paragraph.  Based on this summary : {summary}. {prompt_tone} based on a style of writing {tone_list}. by integrating the following words at least 2 or 3 time : {prompt_seo} for SEO referencement'    
+    template=' Your are  a professional copywriterr quality . Write another innovant and quality  paragraph after this text : {rep4}  {rep5}. start the paragraphe with another kind of sentence than his two previous paragraph.  Based on this summary : {summary}. {prompt_tone} based on a style of writing {tone_list}. by integrating the following words at least 2 or 3 time : {prompt_seo} for SEO referencement'    
 )
 
 # Memory 
